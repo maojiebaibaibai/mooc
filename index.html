@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,37 +8,36 @@
         <title>Document</title>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <link rel="stylesheet" href="./style/index.css"/>
+        <link rel="stylesheet" href="./style/index.css" />
     </head>
-    
+
     <body>
-        <header>
-            <img src="./pictures/header/logo.png"/>
+        <header class="header">
+            <img src="./pictures/header/logo.png" />
             <ul>
                 <li>免费课</li>
                 <li>实战课</li>
-                <li class="special">体系课</li>
+                <li class="special">
+                    <img src="./pictures/header/new2.png" />
+                    体系课
+                </li>
                 <li>慕课教材</li>
                 <li>专栏</li>
                 <li>手记</li>
             </ul>
             <div class="search">
-                <input placeholder="请输入关键字..."/>
-                <div>
+                <input placeholder="请输入关键字..." />
+                <div class="recommend">
                     <span>Vue</span>
                     <span>Python</span>
                 </div>
-                <span class="logo1">
-                    <ion-icon name="search-outline"></ion-icon>
-                </span>
+                <ion-icon name="search-outline"></ion-icon>
             </div>
             <div class="right">
                 <span>收藏网站</span>
-                <span class="logo2">
-                    <ion-icon name="cart-outline"></ion-icon>
-                </span>
-                <span>登录</span> 
-                <span>注册</span>         
+                <ion-icon name="cart-outline"></ion-icon>
+                <span>登录</span>
+                <span>注册</span>
             </div>
         </header>
     </body>

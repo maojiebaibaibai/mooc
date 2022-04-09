@@ -1,13 +1,108 @@
-body>header{
-    width:100% ;
+.header{
     height:72px ;
     background-color:#FFFFFF ;
     display: flex;
-    justify-content: center;
+    padding: 0 280px;
+    align-items: center;
 }
-
-body>header>img{
+.header>img{
     width: 126px;
-    height: 72px;
-    margin-left:-460px ;
+    height: 71px;
+}
+.header ul{
+    display: flex;
+    margin-left: 50px;
+}
+.header ul li{
+    font-size: 16px;
+    color: #545c63;
+    margin-right: 35px;
+    font-family: "PingFang SC";
+    cursor: pointer;
+}
+.header ul li:hover{
+    color: #07111b;
+}
+.header ul li:last-child{
+    margin-right: 0;
+}
+.header ul .special{
+    position: relative;
+}
+.header ul .special img{
+    width: 14px;
+    height: 10px;
+    position: absolute;
+    top:-8px;
+    right: -14px;
+}
+.header .search{
+    margin-left: 43px;
+    width: 325px;
+    height: 40px;
+    background-color: #F3F5F6;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+.header .search input{
+    border: none;
+    background-color: inherit;
+    margin-left: 15px;
+    font-size: 14px;
+    font-family: Arial;
+}
+.header .search input:focus{
+    outline:none;
+}
+.header .search .recommend span{
+    font-size: 14px;
+    color: #9199a1;
+    font-family: "PingFang SC";
+    cursor: pointer;
+}
+.header .search .recommend span:hover{
+    color: red;
+}
+.header .search .recommend span:first-child{
+    margin-right: 15px;
+}
+.header .search ion-icon{
+    margin-left: 18px;
+}
+.header ion-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+.header .right{
+    margin-left: 115px;
+    display: flex;
+    align-items: center;
+    font-family: "PingFang SC";
+}
+.header .right span{
+    font-size: 14px;
+}
+.header .right span:first-child{
+    font-size: 16px;
+    margin-right: 25px;
+}
+.header .right ion-icon{
+    margin-right: 39px;
+}
+.header .right span:nth-child(3){
+    margin-right: 40px;
+}
+.header .right span:nth-child(3)::after{
+    content: "/";
+    position: relative;
+    left:20px;
+    cursor: default;
+    color: #CFCFCF;
+}
+.header .right span,.header .right ion-icon{
+    cursor: pointer;
+}
+.header .right span:hover,.header .right ion-icon:hover{
+    color: red;
 }
