@@ -1,13 +1,157 @@
-body>header{
-    width:100% ;
+/* .header{ */
+    /* max-width: 1366px;
+    min-width: 1152px;  */
+/* 
+    width: 1366px;
     height:72px ;
     background-color:#FFFFFF ;
-    display: flex;
-    justify-content: center;
+    display: flex; 
+    align-items: center; 
 }
 
-body>header>img{
+.header>div{
+    margin:0 auto;
+    display: flex;
+    align-items: center; 
+} 
+
+
+.header div>img{
+    width: 126px;
+    height: 72px; 
+    margin-left: ; 
+}
+
+.header div>ul{
+    display: flex;
+}  */
+
+.header{
+    margin: 0 auto;
+    height:72px;
+    background-color: #FFF;
+    
+}
+
+.header>div{
+    margin:0 auto;
+    width: 1366px;
+    height:72px;
+    display:flex;
+    align-items: center;
+}
+
+.header>div>img{
+    margin: 0 30px 0 16px;
     width: 126px;
     height: 72px;
-    margin-left:-460px ;
+}
+
+.header>div>ul{
+    display: flex;
+}
+
+.header>div>ul>li{
+    margin: 0 16px;
+    font-size:16px;
+    font-family:"微软雅黑";
+    color:#545c63;
+    cursor: pointer; /*鼠标固定的显示样式*/
+}
+
+/* .header>div>ul:last-child{
+    margin-right: 0px;
+} */
+.header>div>ul>li:last-child{
+    margin-right:0;
+}
+
+
+.header>div>ul .special{
+    position:relative
+}
+
+.header>div>ul .special img{
+    width: 14px;
+    height:10px;
+    position: absolute;
+    top:-7px;
+}
+
+
+
+.header>div .search{
+    margin-left:42px;
+    width: 300px;
+    height: 40px;
+    display: flex;        
+    align-items: center;  
+    background-color:#f3f5f6; 
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.header>div .search input{
+    /* margin-left:10px; */
+    border: none;
+    background-color: inherit; /* 继承*/  
+    color:#9199a1;
+    font-family: "PingFang SC";
+}
+.header>div .search input:focus{   /*focus和hover一样是个状态*/
+    outline:none;
+}
+
+.header>div .search div{
+    margin-left: 35px;
+}
+
+.header>div .search div span{
+    color:#9199a1;
+    font-size:14px;
+    font-family: "PingFang SC";
+    cursor: pointer;
+}
+
+.header>div .search div span:hover{
+    color:red;
+}
+
+
+
+
+
+
+
+
+
+.header>div .right{
+    margin: 0 0 0 120px;
+    cursor: pointer;
+}
+
+.header>div .right span:nth-child(1){
+    font-size:16px ;
+    font-family: "微软雅黑";
+    color: #545c63;
+}
+ion-icon {
+    margin-left:18px;
+    font-size: 20px;
+}
+.header>div .right span:nth-child(3){
+    margin-left:29px ;
+    font-size:14px ;
+    font-family: "微软雅黑";
+    color: #4d555d;
+}
+.header>div .right span:nth-child(4){
+    margin: 0 6px;
+    font-size: 15px;
+    color: #d9dde1;;
+}
+.header>div .right span:nth-child(5){
+    font-size:14px ;
+    font-family: "微软雅黑";
+    color: #4d555d;
 }
